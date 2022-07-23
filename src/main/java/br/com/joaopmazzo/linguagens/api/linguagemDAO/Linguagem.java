@@ -1,9 +1,9 @@
-package br.com.joaopmazzo.linguagens.api.LinguagemDAO;
+package br.com.joaopmazzo.linguagens.api.linguagemDAO;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
-@Document(collation = "linguagens_preferidas")
+@Document(collection = "principais_linguagens")
 public class Linguagem {
 
     @Id

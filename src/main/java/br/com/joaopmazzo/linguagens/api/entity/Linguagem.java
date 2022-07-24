@@ -1,4 +1,4 @@
-package br.com.joaopmazzo.linguagens.api.linguagemDAO;
+package br.com.joaopmazzo.linguagens.api.entity;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
@@ -26,11 +26,24 @@ public class Linguagem {
         return title;
     }
 
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
     public String getImage() {
         return image;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
     }
 
     public int getRanking() {
         return ranking;
     }
+
+    public void setRanking(int ranking) {
+        this.ranking = ranking;
+    }
+
 }
